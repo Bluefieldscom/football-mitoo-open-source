@@ -1,7 +1,15 @@
 # football-mitoo-open-source
 
-## Configuration
+> FootballMitoo is the UK's biggest independent free league management system
 
-- Replaced all email addresses with INSERT_EMAIL_HERE
-- Replaced GA tracker code with ‘GOOGLE_ANALYTICS_ID'
-- Replaces Goolge Conversion ID with GOOGLE_CONVERSION_ID
+## Requirements
+
+- ColdFusion MX 6.0
+- PHP 4.0+
+
+## Installation
+
+Update configuration files:
+
+- Web service username and password in `phpservice/config.php`
+- MySQL configuration in `phpservive/common.php`
