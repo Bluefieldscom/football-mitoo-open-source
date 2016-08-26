@@ -1,0 +1,178 @@
+/*
+SQLyog Community Edition- MySQL GUI v7.12 
+MySQL - 5.0.45-log : Database - zmast
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+USE `zmast`;
+
+/* Procedure structure for procedure `delete_item` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `delete_item` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `delete_item`(changetable VARCHAR(12), item_id INT, season CHAR(4), INOUT accepted INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+	SET accepted = 0;
+	ROLLBACK;
+	END;
+	
+	SET @primestmt := 
+	CONCAT('
+	DELETE FROM fm',season,'.',changetable,' 
+	WHERE id = ',item_id,'
+	');
+	SET @secondarystmt := 
+	CONCAT('
+	UPDATE lk_',changetable,' 
+	SET ',season,'id = NULL 
+	WHERE ',season,'id = ',item_id,'
+	');
+	PREPARE stmt1 FROM @primestmt;
+	PREPARE stmt2 FROM @secondarystmt;
+	
+	START TRANSACTION;
+		
+		EXECUTE stmt1;
+		
+		EXECUTE stmt2;
+		
+		COMMIT;
+		SET accepted = 1;
+		
+	END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `delete_multiple_items` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `delete_multiple_items` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `delete_multiple_items`(changetable VARCHAR(12), season CHAR(4), inlist varchar(128), INOUT accepted INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+	SET accepted = 0;
+	ROLLBACK;
+	END;
+	
+	SET @primestmt := 
+	CONCAT('
+	DELETE FROM fm',season,'.',changetable,' 
+	WHERE id IN (',inlist,')
+	');
+	
+	SET @secondarystmt := 
+	CONCAT('
+	UPDATE lk_',changetable,' 
+	SET ',season,'id = NULL 
+	WHERE ',season,'id IN (',inlist,')
+	');
+	
+	PREPARE stmt1 FROM @primestmt;
+	PREPARE stmt2 FROM @secondarystmt;
+	
+	START TRANSACTION;
+		
+		EXECUTE stmt1;
+		
+		EXECUTE stmt2;
+		
+		COMMIT;
+		SET accepted = 1;
+		
+	END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `insert_constitution` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `insert_constitution` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_constitution`(season CHAR(4), divisionid mediumINT(8), teamid MEDIUMINT(8), ordinalid MEDIUMINT(8), thismatchnoid MEDIUMINT(8), nextmatchnoid MEDIUMINT(8), leaguecode VARCHAR(7), INOUT accepted INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+	SET accepted = 0;
+	ROLLBACK;
+	END;
+		
+	START TRANSACTION;
+						
+		SET @primestmt := 
+		CONCAT('
+		INSERT INTO fm',season,'.constitution (DivisionID, TeamID, OrdinalID, ThisMatchNoID, NextMatchNoID, LeagueCode) 
+		VALUES (',divisionid,',',teamid,',',ordinalid,',',thismatchnoid,',',nextmatchnoid,',"',leaguecode,'")
+		');
+		
+		PREPARE stmt1 FROM @primestmt;
+		EXECUTE stmt1;
+			
+		SET @newnumber = LAST_INSERT_ID();
+		
+		SET @secondarystmt := 
+		    CONCAT('
+		    INSERT INTO lk_constitution (',season,'id, notes) 
+		    VALUES (',@newnumber,',"Entered automatically - needs merging")
+		    ');
+		
+		PREPARE stmt2 FROM @secondarystmt;
+		EXECUTE stmt2;
+		
+		COMMIT;
+		SET accepted = 1;
+		
+END */$$
+DELIMITER ;
+
+/* Procedure structure for procedure `insert_LUTable` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `insert_LUTable` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_LUTable`(changetable VARCHAR(12), season CHAR(4), longcol VARCHAR(50), mediumcol VARCHAR(25), shortcol VARCHAR(15), notes TEXT, leaguecode VARCHAR(7), INOUT accepted INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR SQLEXCEPTION
+	BEGIN
+	SET accepted = 0;
+	ROLLBACK;
+	END;
+	
+	START TRANSACTION;	
+		SET @primestmt := 
+		CONCAT('
+		INSERT INTO fm',season,'.',changetable,' (LongCol, MediumCol, ShortCol, Notes, LeagueCode) 
+		VALUES ("',longcol,'","',mediumcol,'","',shortcol,'","',notes,'","',leaguecode,'")
+		');
+		PREPARE stmt1 FROM @primestmt;
+		EXECUTE stmt1;
+		
+		SET @newnumber = LAST_INSERT_ID();
+		SET @secondarystmt := 
+		CONCAT('
+		INSERT INTO lk_',changetable,' (',season,'id, ',changetable,'name, leaguecode) 
+		VALUES(',@newnumber,',"',longcol,'","',leaguecode,'")
+		');
+		
+		PREPARE stmt2 FROM @secondarystmt;
+		EXECUTE stmt2;
+	
+		COMMIT;
+		SET accepted = 1;
+		
+	END */$$
+DELIMITER ;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

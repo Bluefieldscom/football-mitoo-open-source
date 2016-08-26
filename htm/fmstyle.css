@@ -1,0 +1,50 @@
+.pix9 { font-family: Verdana, Arial, Helvetica; font-size: 9px; font-weight:normal; }
+
+
+.pix10 { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:normal; }
+.pix10bold { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; }
+.pix10boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:navy;}
+.pix10boldred { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:red;}
+.pix10boldgreen { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:green;}
+.pix10boldwhite { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:white;}
+.pix10bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; font-style:italic;  }
+.pix10italic { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-style:italic;  }
+.pix10red { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:red;}
+.pix10white { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:white;}
+.pix10black { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:black;}
+
+
+.pix13 { font-family: Verdana, Arial, Helvetica; font-size: 13px; }
+.pix13italic { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-style:italic;  }
+.pix13bold { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold; }
+.pix13boldred { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:red;}
+.pix13boldwhite { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:white;}
+.pix13boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:navy;}
+.pix13bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold; font-style:italic;  }
+
+
+
+
+.pix14bold { font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight:bold; }
+
+.pix14boldred { font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight:bold; color:red;}
+
+.pix16bold { font-family: Verdana, Arial, Helvetica; font-size: 16px; font-weight:bold; }
+
+.pix18 { font-family: Verdana, Arial, Helvetica; font-size: 18px; }
+.pix18bold { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; }
+.pix18bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; font-style:italic;  }	
+.pix18boldred { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:red;}
+.pix18boldgreen { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:green;}
+.pix18boldwhite { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:white;}
+.pix18boldgray { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:gray;}
+
+.pix24 { font-family: Verdana, Arial, Helvetica; font-size: 24px;  }
+.pix24bold { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold;  }
+.pix24boldred { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold; color:red;}
+.pix24boldblue { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold; color:blue;}
+
+
+.pix48bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 48px; font-weight:bold; font-style:italic;  }
+
+.monopix18blue { font-family: Courier New, Courier, mono; font-size: 18px; color:blue;}

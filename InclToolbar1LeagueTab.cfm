@@ -1,0 +1,3 @@
+<cfoutput>
+<a href="LeagueTab.cfm?TblName=Matches&DivisionID=#GetDivision.CompetitionID#&LeagueCode=#LeagueCode#" onmouseover="this.T_BORDERWIDTH=1;this.T_STATIC=true;this.T_DELAY=200;this.T_SHADOWCOLOR='##6A7289';this.T_FONTFACE='#Font_Face#';this.T_BGCOLOR='yellow';this.T_FONTSIZE='14px';this.T_PADDING=5;this.T_WIDTH=300;return escape('#TooltipText#')"><cfif Left(GetDivision.CompetitionNotes,2) IS "KO" ><cfif GetDivision.CompetitionID IS DivisionID><span class="pix10bolditalic">#CompetitionCode#</span><cfelse><span class="pix10italic">#CompetitionCode#</span></cfif><cfelse><cfif GetDivision.CompetitionID IS DivisionID><span class="pix10boldwhite">#CompetitionCode#</span><cfelse><span class="pix10">#CompetitionCode#</span></cfif></cfif></a>
+</cfoutput>

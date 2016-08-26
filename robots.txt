@@ -1,0 +1,96 @@
+# Robots.txt file created by http://www.webtoolcentral.com
+# For domain: http://www.football.mitoo.co.uk
+
+# All robots will spider the domain
+# User-agent: *
+# Disallow:
+
+User-agent: NG/2.0
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: e-SocietyRobot
+Disallow: /
+
+User-agent: Slurp
+crawl-delay: 300
+
+User-agent: msnbot
+crawl-delay: 300
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: NPBot
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: Ocelli
+Disallow: /
+
+User-agent: Wget*
+Disallow: /
+
+User-agent: UbiCrawler
+Disallow: /
+
+# Disallow various data-intensive files
+User-agent: *
+Disallow: /SecurityCheck.cfm
+Disallow: /UpdateForm.cfm
+Disallow: /LoginOut.cfm
+Disallow: /Action.cfm
+Disallow: /LUList.cfm
+Disallow: /queries/
+Disallow: /ChangeClubPassword.cfm
+Disallow: /ClubUmbrellaReport1.cfm
+Disallow: /ClubUmbrellaReport2.cfm
+Disallow: /CommitteeDetailsXLS.cfm
+Disallow: /DeleteAllExpiredRegistrationsEndSeason.cfm
+Disallow: /DTOCompare.cfm
+Disallow: /ExportCommitteeDetails.cfm
+Disallow: /ExportFixturesAndResultsXLS.cfm
+Disallow: /GatherTeamsUnderClub.cfm
+Disallow: /InclBatchLoadFixtures.cfm
+Disallow: /InclShowJABOnly.cfm
+Disallow: /JABDeleteAllRegistrations.cfm
+Disallow: /JABDeleteRegistrations.cfm
+Disallow: /JLoginQuery.cfm
+Disallow: /JLoginQuery2.cfm
+Disallow: /LeagueInfoUpdate.cfm
+Disallow: /LeaguesOnAlert.cfm
+Disallow: /ListOfHiddenLeagues.cfm
+Disallow: /LoadAllFromSpreadsheet.cfm
+Disallow: /LoadAppearancesFromSpreadsheet.cfm
+Disallow: /LoadFixturesAndResultsFromSpreadsheet.cfm
+Disallow: /LoadPlayersAndRegistrationsFromSpreadsheet.cfm
+Disallow: /LoadPlayersAndRegistrationsFromSpreadsheetCONF.cfm
+Disallow: /LoadRefereesFromSpreadsheet.cfm
+Disallow: /NewSeason.cfm
+Disallow: /NewSeason_Julian.cfm
+Disallow: /NewSeason_last.cfm
+Disallow: /NewSeason_mine_adjusted.cfm
+Disallow: /RegistrationInfo.cfm
+Disallow: /SwapHomeAway.cfm
+Disallow: /testing01.cfm
+Disallow: /TransferTeamToMisc.cfm
+Disallow: /UmbrellaCompare.cfm
+Disallow: /UploadLeagueDocs_DOC.cfm
+Disallow: /UploadLeagueDocs_PDF.cfm
+Disallow: /UploadLeagueDocs_XLS.cfm
+Disallow: /UploadLeaguePics_JPG.cfm
+Disallow: /Copy of toolbar2.cfm
+Disallow: /InclCheckFixtureDate.cfm
+Disallow: /InclCheckKORound.cfm
+Disallow: /InclCheckNoScore.cfm
+Disallow: /IncPushResultToGR.cfm
+Disallow: /InclUpdtFixture.cfm
+Disallow: /RefsHist.cfm
+Disallow: /toolbar2.cfm

@@ -1,0 +1,24 @@
+	table.outer {  }
+	table.inner { }
+	table.help { }
+	.bg_color { background-color:#dbe6e6; }
+	td { color: black; border:solid; border-width: 0px; border-color: black; font-family:Verdana,Arial,sans-serif; font-size:10px; }
+	td.help {  font-family: Verdana,Arial,sans-serif; font-size:0.65em; }
+	.today { color: gray; background-color: silver; border-color: black; border-width: 2px; }
+	.todayevent { background-color: white; border-color: black; border-width: 2px; }
+	.event { background-color: white; border-color: #D8FEF5; border-width: 1px; }
+	.non-event {  color: gray; background-color: silver; border-color: #D8FEF5; border-width: 1px; }	
+		
+	.toprow { height: 20px; }
+	.lightblue { color: blue; }
+	.lightred { color: red; }
+	.gray { background-color: gray; border-color: gray; border-width: 1px; }
+	
+	.showheader { font-family: Verdana,Arial,sans-serif; font-weight: bold; font-size:13px; color:navy;}
+	.showeventitems { font-family: Verdana,Arial,sans-serif; font-size:10px; color:red; }
+	.showeventdate { font-family: Verdana,Arial,sans-serif; font-size:10px; color:blue; }
+	.showeventtext { font-family: Verdana,Arial,sans-serif; font-size:10px; }
+	.input { font-family: Verdana,Arial,sans-serif; font-size:1.0em; }
+	.textarea { font-family: Verdana,Arial,sans-serif; font-size:10px; }
+	.textwarning { font-family: Verdana,Arial,sans-serif; font-size:9px; color:navy; }
+

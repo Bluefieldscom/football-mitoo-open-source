@@ -1,0 +1,107 @@
+body,html {
+  scrollbar-face-color: #9999cc;
+  scrollbar-shadow-color: #0099cc;
+  scrollbar-highlight-color: #CCF;
+  scrollbar-3dlight-color: #CFF;
+  scrollbar-darkshadow-color: #366;
+  scrollbar-track-color: #99ccff;
+  scrollbar-arrow-color: #00ffff;
+}
+
+
+
+
+.bg_color { background-color:beige; }
+.bg_color { background-color:#D8FEF5; }
+
+.bg_highlight { background-color:#FED8D8; }
+.bg_highlight2 { background-color:#FEFFD2; }
+.bg_yellow {background-color:yellow; }
+.bg_white {background-color:white; }
+.bg_suspend { background-color:#E8E8E8; }
+.bg_registr { background-color:#FFFFBB; }
+.bg_lightgreen {background-color:lightgreen; }
+.bg_pink {background-color:pink; }
+.bg_silver {background-color:silver; }
+
+
+.pix9 { font-family: Verdana, Arial, Helvetica; font-size: 9px; font-weight:normal; }
+
+
+.pix10 { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:normal; }
+.pix10bold { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; }
+.pix10boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:navy;}
+.pix10boldred { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:red;}
+.pix10boldgreen { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:green;}
+.pix10boldwhite { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:white;}
+.pix10boldblack { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; color:black;}
+.pix10bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-weight:bold; font-style:italic;  }
+.pix10italic { font-family: Verdana, Arial, Helvetica; font-size: 10px; font-style:italic;  }
+.pix10red { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:red;}
+.pix10white { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:white;}
+.pix10black { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:black;}
+.pix10grey { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:gray;}
+.pix10navy { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:navy;}
+.pix10silver { font-family: Verdana, Arial, Helvetica; font-size: 10px; color:silver;}
+
+.pix13 { font-family: Verdana, Arial, Helvetica; font-size: 13px; }
+.pix13italic { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-style:italic;  }
+.pix13bold { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold; }
+.pix13boldred { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:red;}
+.pix13boldblack { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:black;}
+.pix13boldsilver { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:silver;}
+.pix13silver { font-family: Verdana, Arial, Helvetica; font-size: 13px; color:silver;}
+.pix13grey { font-family: Verdana, Arial, Helvetica; font-size: 13px; color:gray;}
+.pix13boldwhite { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:white;}
+.pix13boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:navy;}
+.pix13bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold; font-style:italic;  }
+.pix13boldgray { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:bold;  color:gray;}
+
+
+
+.pix14bold { font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight:bold; }
+.pix14boldred { font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight:bold; color:red;}
+.pix14boldblack { font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight:bold;  color:black;}
+.pix14boldsilver { font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight:bold;  color:silver;}
+
+
+.pix16bold { font-family: Verdana, Arial, Helvetica; font-size: 16px; font-weight:bold; }
+.pix16boldblack { font-family: Verdana, Arial, Helvetica; font-size: 16px; font-weight:bold;  color:black;}
+.pix16boldsilver { font-family: Verdana, Arial, Helvetica; font-size: 16px; font-weight:bold;  color:silver;}
+.pix16boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 16px; font-weight:bold;  color:navy;}
+
+
+.pix18 { font-family: Verdana, Arial, Helvetica; font-size: 18px; }
+.pix18bold { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; }
+.pix18bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; font-style:italic;  }	
+.pix18boldred { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:red;}
+.pix18boldgreen { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:green;}
+.pix18boldwhite { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:white;}
+.pix18boldgray { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold; color:gray;}
+.pix18boldblack { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold;  color:black;}
+.pix18boldsilver { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold;  color:silver;}
+.pix18boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 18px; font-weight:bold;  color:navy;}
+
+
+.pix24 { font-family: Verdana, Arial, Helvetica; font-size: 24px;  }
+.pix24bold { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold;  }
+.pix24boldred { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold; color:red;}
+.pix24boldblue { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold; color:blue;}
+.pix24boldnavy { font-family: Verdana, Arial, Helvetica; font-size: 24px; font-weight:bold; color:navy;}
+
+.pix36bold { font-family: Verdana, Arial, Helvetica; font-size: 36px;  font-weight:bold; }
+.pix48bolditalic { font-family: Verdana, Arial, Helvetica; font-size: 48px; font-weight:bold; font-style:italic;  }
+
+.monopix10 { font-family: Courier New, Courier, mono; font-size: 10px; }
+.monopix12 { font-family: Courier New, Courier, mono; font-size: 12px; }
+.monopix12white { font-family: Courier New, Courier, mono; font-size: 12px; color:white;}
+.monopix18blue { font-family: Courier New, Courier, mono; font-size: 18px; color:blue;}
+.monopix16red { font-family: Courier New, Courier, mono; font-size: 16px; color:red;}
+
+.hilite { background-color:#FED8D8; }
+
+.hilitepromoted { background-color:lawngreen; }
+.promoted { background-color:lightgreen; }
+
+.hiliterelegated { background-color:tomato; }
+.relegated { background-color:lightsalmon; }

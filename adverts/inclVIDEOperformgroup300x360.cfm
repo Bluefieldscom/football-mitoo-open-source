@@ -1,0 +1,4 @@
+<!--- inclVIDEOperformgroup300x360.cfm  300x360 Autoplay --->
+
+ 
+<div id="eplayerHolder" style="width:300px; height:360px; margin:0 auto;"><div id='perfba2hyxvslf0w19niuv8xw9afc'><a href='http://www.adobe.com/go/getflashplayer' target='_blank'> <img  src='http://images.eplayer.performgroup.com/namedImage/12637/install_flash.gif' alt='Get Adobe Flash player' /></a></div> <script type='text/javascript' src='http://static.eplayer.performgroup.com/flash/js/swfobject.js'></script><script type='text/javascript' src='http://static.eplayer.performgroup.com/flash/js/performgroup.js'></script><script type='text/javascript'>addCustomPlayer('ba2hyxvslf0w19niuv8xw9afc', '', '', 300, 360, 'perfba2hyxvslf0w19niuv8xw9afc', 'eplayer2', {age:1386840866314});</script></div>

@@ -1,0 +1,65 @@
+<!--- Called by inclLeagueInfo.cfm, inclCreateNewLeagueTableRows.cfm  --->
+
+<cfquery name="QLeagueCode" datasource="ZMAST" >	
+	SELECT
+		ID,
+		CountiesList,
+		Namesort,
+		LeagueName,
+		DefaultLeagueCode,
+		LeagueCodePrefix,
+		LeagueCodeYear,
+		BadgeJpeg,
+		WebsiteLink,
+		DefaultDivisionID, 
+		PointsForWin,
+		PointsForDraw,
+		PointsForLoss,
+		LeagueTblCalcMethod,
+		DefaultYouthLeague, 
+		SeasonName,
+		SeasonStartDate,
+		SeasonEndDate, 
+		DefaultRulesAndFines, 
+		RandomPlayerRegNo ,
+		FANPlayerRegNo ,
+		RefMarksOutOfHundred,
+		SportsmanshipMarksOutOfHundred,
+		RefereeLowMarkWarning,
+		DefaultGoalScorers,
+		LeagueType,
+		AltLeagueCodePrefix,
+		Alert,
+		VenueAndPitchAvailable,
+		SuppressTeamSheetEntry,
+		SuppressRedYellowCardsEntry,
+		SuppressTeamCommentsEntry,
+		SuppressTeamDetailsEntry,
+		SuppressKOTimeEntry,
+		SuppressLeadingGoalscorers,
+		SuppressScorelineEntry,
+		LeagueBrand, 
+		ShowAssessor,
+		GoalrunTeamSheet,
+		HideThisSeason,
+		NoPlayerReRegistrationForm,
+		ShowOnGoalrunOnly,
+		MatchBasedSuspensions,
+		HideSuspensions,
+		SuspensionStartsAfter,
+		KickOffTimeOrder,
+		ClubsCanInputSportsmanshipMarks,
+		MatchBanReminder,
+		RefereeLowMarkWarning,
+		SeeOppositionTeamSheet,
+		RefereeMarkMustBeEntered,
+		spare01,
+		spare02,
+		HideDoubleHdrMsg
+	FROM
+		leagueinfo
+	WHERE
+		DefaultLeagueCode = <cfqueryparam value = '#LeagueCode#' 
+						cfsqltype="CF_SQL_VARCHAR" maxlength="10">
+</cfquery>
+

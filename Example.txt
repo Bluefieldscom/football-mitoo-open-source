@@ -1,0 +1,3 @@
+43.65654|-79.90138|Some stuff to display in the<br>First Info Window|Marker One
+43.91892|-78.89231|Some stuff to display in the<br>Second Info Window|Marker Two
+43.82589|-79.10040|&lt; Some stuff to display in the<br>Third Info "Window" &gt;|Marker Three

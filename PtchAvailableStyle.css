@@ -1,0 +1,38 @@
+	table.outer {  }
+	table.inner { }
+	table.help { }
+	td { color: black; border:solid; border-width: 0px; border-color: black; font-family:Verdana,Arial,sans-serif; font-size:10px; }
+	td.help {  font-family: Verdana,Arial,sans-serif; font-size:0.65em; }
+	.PtchOKAvailable { background-color: LightGreen; border-color: lavender; border-width: 1px; }
+	.PtchNotOKAvailable { background-color: Pink; border-color: lavender; border-width: 1px; }
+	.PtchOKAvailableToday { background-color: LightGreen; border-color: black; border-width: 2px; }
+	.PtchNotOKAvailableToday { background-color: Pink; border-color: black; border-width: 2px; }
+	.non-PtchAvailable {  color: gray; background-color: silver; border-color: lavender; border-width: 1px; }	
+	.non-PtchAvailableToday {  color: gray; background-color: silver; border-color: black; border-width: 1px; }	
+	.toprow { height: 20px; }
+	.lightblue { color: blue; }
+	.lightred { color: red; }
+	.gray { background-color: gray; border-color: gray; border-width: 1px; }
+	
+	.showheader1 { font-family: Verdana,Arial,sans-serif; font-weight: bold; font-size:13px; color:navy;}
+	.showheader2 { font-family: Verdana,Arial,sans-serif; font-weight: bold; font-size:10px; color:navy;}
+	.showeventitems { font-family: Verdana,Arial,sans-serif; font-size:10px; color:red; }
+	.showmatchdate { font-family: Verdana,Arial,sans-serif; font-size:10px; color:blue; }
+	.showeventtext { font-family: Verdana,Arial,sans-serif; font-size:10px; }
+	.input { font-family: Verdana,Arial,sans-serif; font-size:1.0em; }
+	.textarea { font-family: Verdana,Arial,sans-serif; font-size:10px; }
+	.textwarning { font-family: Verdana,Arial,sans-serif; font-size:9px; color:navy; }
+	
+	
+<!--- see http://www.scientificpsychic.com/etc/css-mouseover.html --->
+span.dropt {  background:  none;  }
+span.dropt:hover {text-decoration: none; background: none; z-index: 6; }
+span.dropt span {position: absolute; left: -9999px;
+  margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
+  border-style:solid; border-color:black; border-width:1px; z-index: 6;}
+span.dropt:hover span {left: 2%; background: none;} 
+span.dropt span {position: absolute; left: -9999px;
+  margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; 
+  border-style:solid; border-color:black; border-width:1px; font-family: Verdana,Arial,sans-serif; font-weight: bold; font-size:13px; color:navy;}
+span.dropt:hover span {margin: 20px 0 0 100px; background: #ffffff; z-index:6;} 
+

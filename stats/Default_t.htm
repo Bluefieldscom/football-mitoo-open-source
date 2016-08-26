@@ -1,0 +1,734 @@
+<html>
+<head>
+<title>Default Report Table of Contents</title>
+<script LANGUAGE=JavaScript1.2>
+<!-- browser info object
+// copyright (c)	webtrends corp., 1999.  all rights reserved.
+
+function BrowserInfo() {
+	var agent = navigator.userAgent.toLowerCase();
+	this.major = parseInt(navigator.appVersion);
+	this.minor = parseFloat(navigator.appVersion);
+	this.ns  = ((agent.indexOf('mozilla')!=-1) && ((agent.indexOf('spoofer')==-1) && (agent.indexOf('compatible') == -1)));
+	this.ns2 = (this.ns && (this.major == 3));
+	this.ns3 = (this.ns && (this.major == 3));
+	this.ns4 = (this.ns && (this.major >= 4));
+	this.ie   = (agent.indexOf("msie") != -1);
+	this.ie3  = (this.ie && (this.major == 2));
+	this.ie4  = (this.ie && (this.major >= 4));
+	this.op3 = (agent.indexOf("opera") != -1);
+}
+var browserinfo = new BrowserInfo()
+// -->
+</script>
+
+<script LANGUAGE=javascript>
+
+<!-- toc data
+
+function anItem(alink,adesc)
+{
+	this.alink = alink
+	this.adesc = adesc
+}
+var VOLUMES		= new Array
+var CHAPTERS	= new Array
+var ITEMS		= new Array
+
+CHAPTERS[6] = 5
+CHAPTERS[7] = 5
+CHAPTERS[1] = 1
+CHAPTERS[2] = 13
+CHAPTERS[3] = 5
+CHAPTERS[4] = 7
+CHAPTERS[5] = 5
+
+ITEMS[1]	= new anItem("DEFAULT_01_b.HTM#topofwebtrendsreport","General Statistics")
+ITEMS[2]	= new anItem("DEFAULT_02_b.HTM#TopDocumentstc","Most Requested Pages")
+ITEMS[3]	= new anItem("DEFAULT_02_b.HTM#TopBottomtc","Least Requested Pages")
+ITEMS[4]	= new anItem("DEFAULT_02_b.HTM#TopEntryPagetc","Top Entry Pages")
+ITEMS[5]	= new anItem("DEFAULT_02_b.HTM#TopBottomEntryPagetc","Least Requested Entry Pages")
+ITEMS[6]	= new anItem("DEFAULT_02_b.HTM#TopEntryRequesttc","Top Entry Requests")
+ITEMS[7]	= new anItem("DEFAULT_02_b.HTM#TopBottomEntryRequesttc","Least Requested Entry Requests")
+ITEMS[8]	= new anItem("DEFAULT_02_b.HTM#TopExittc","Top Exit Pages")
+ITEMS[9]	= new anItem("DEFAULT_02_b.HTM#TopSinglePagetc","Single Access Pages")
+ITEMS[10]	= new anItem("DEFAULT_02_b.HTM#TopDirectorytc","Most Accessed Directories")
+ITEMS[11]	= new anItem("DEFAULT_02_b.HTM#TopPathstc","Top Paths Through Site")
+ITEMS[12]	= new anItem("DEFAULT_02_b.HTM#TopDownloadstc","Most Downloaded Files")
+ITEMS[13]	= new anItem("DEFAULT_02_b.HTM#TopExtensionstc","Most Downloaded File Types")
+ITEMS[14]	= new anItem("DEFAULT_02_b.HTM#TopFormstc","Dynamic Pages & Forms")
+ITEMS[15]	= new anItem("DEFAULT_03_b.HTM#VisitorTrackingtc","Visitors by Number of Visits")
+ITEMS[16]	= new anItem("DEFAULT_03_b.HTM#NewVsReturningUserstc","New vs. Returning Visitors")
+ITEMS[17]	= new anItem("DEFAULT_03_b.HTM#TopUserstc","Top Visitors")
+ITEMS[18]	= new anItem("DEFAULT_03_b.HTM#TopGeoRegionstc","Top Geographic Regions")
+ITEMS[19]	= new anItem("DEFAULT_03_b.HTM#TopCompaniestc","Most Active Organizations")
+ITEMS[20]	= new anItem("DEFAULT_04_b.HTM#ActivityStatstc","Summary for Report Period")
+ITEMS[21]	= new anItem("DEFAULT_04_b.HTM#TopBandwidthtc","By Time Increment")
+ITEMS[22]	= new anItem("DEFAULT_04_b.HTM#TopWeekdaystc","By Day of the Week")
+ITEMS[23]	= new anItem("DEFAULT_04_b.HTM#TopHourstc","By Hour of the Day")
+ITEMS[24]	= new anItem("DEFAULT_04_b.HTM#TopVisitsByDurationtc","By Length of Visit")
+ITEMS[25]	= new anItem("DEFAULT_04_b.HTM#TopViewsPerVisittc","By Number of Views")
+ITEMS[26]	= new anItem("DEFAULT_04_b.HTM#UserSessionStatstc","Visitors by Time Increment")
+ITEMS[27]	= new anItem("DEFAULT_05_b.HTM#TechnicalStatstc","Technical Statistics")
+ITEMS[28]	= new anItem("DEFAULT_05_b.HTM#TopFormErrorstc","Dynamic Pages & Forms Errors")
+ITEMS[29]	= new anItem("DEFAULT_05_b.HTM#TopClientErrorstc","Client Errors")
+ITEMS[30]	= new anItem("DEFAULT_05_b.HTM#Top404Errorstc","Page Not Found Errors")
+ITEMS[31]	= new anItem("DEFAULT_05_b.HTM#TopServerErrorstc","Server Errors")
+ITEMS[32]	= new anItem("DEFAULT_06_b.HTM#TopReferingSitestc","Top Referring Sites")
+ITEMS[33]	= new anItem("DEFAULT_06_b.HTM#TopRefererstc","Top Referring URLs")
+ITEMS[34]	= new anItem("DEFAULT_06_b.HTM#TopSearchEnginestc","Top Search Engines")
+ITEMS[35]	= new anItem("DEFAULT_06_b.HTM#TopSearchKeyPhrasestc","Top Search Phrases")
+ITEMS[36]	= new anItem("DEFAULT_06_b.HTM#TopSearchKeywordstc","Top Search Keywords")
+ITEMS[37]	= new anItem("DEFAULT_07_b.HTM#TopBrowserstc","Most Used Browsers")
+ITEMS[38]	= new anItem("DEFAULT_07_b.HTM#TopNetscapetc","Netscape Browsers")
+ITEMS[39]	= new anItem("DEFAULT_07_b.HTM#TopExplorertc","Microsoft Explorer Browsers")
+ITEMS[40]	= new anItem("DEFAULT_07_b.HTM#TopSpiderstc","Visiting Spiders")
+ITEMS[41]	= new anItem("DEFAULT_07_b.HTM#TopPlatformstc","Most Used Platforms")
+
+VOLUMES[1]	= new anItem("DEFAULT_01_b.HTM#topofwebtrendsreport","General Statistics")
+VOLUMES[2]	= new anItem("DEFAULT_02_b.HTM#TopDocumentstc","Resources Accessed")
+VOLUMES[3]	= new anItem("DEFAULT_03_b.HTM#VisitorTrackingtc","Visitors & Demographics")
+VOLUMES[4]	= new anItem("DEFAULT_04_b.HTM#ActivityStatstc","Activity Statistics")
+VOLUMES[5]	= new anItem("DEFAULT_05_b.HTM#TechnicalStatstc","Technical Statistics")
+VOLUMES[6]	= new anItem("DEFAULT_06_b.HTM#TopReferingSitestc","Referrers & Keywords")
+VOLUMES[7]	= new anItem("DEFAULT_07_b.HTM#TopBrowserstc","Browsers & Platforms")
+
+ 
+var	maxChapters     = 0
+var gbFirst			= true;
+var bExpanded		= false;						// is tree initially expanded completely
+var bLoaded			= false;						// tree is ready
+var width			= 300;
+var height			= 20;
+var MaxItems		= VOLUMES.length + ITEMS.length
+var listX			= 2								// start x of list
+var listY			= 23							// start y of list
+var bgColor = "FFFFFF";
+	
+if(parseInt(navigator.appVersion) < 4) 
+{
+	var item = 0
+	var alink = ""
+	var adesc = ""
+	with (window.document)
+	{
+		writeln('<body bgcolor="FFFFFF">')
+		writeln('<font size=3 face="ms sans serif,arial,helvetica,verdana,lucida,utopia" color="000000" ><b>Table of Contents</b></font>');
+		writeln('<BR>');
+		writeln('<BR>');
+		writeln('<table border=0 cellpadding=0 cellspacing=0>');
+
+		for (var volume = 1; volume <= (VOLUMES.length-1); volume++)
+		{
+			writeln('<TR>')
+			write('  <TD colspan=2><font size=2 face="ms sans serif,arial,helvetica,verdana,lucida,utopia"><a href="' + VOLUMES[volume].alink + '" target="CONTENT"><b>' + VOLUMES[volume].adesc + '</b></a></font></td>')
+			writeln('</TR>')
+			
+			for (var chapters=1; chapters <= CHAPTERS[volume]; chapters++)
+			{
+				item += 1
+				alink = ITEMS[item].alink
+				adesc = ITEMS[item].adesc
+				writeln('<tr>')
+				write('  <td valign=top><font size=1 face="ms sans serif,arial,helvetica,verdana,lucida,utopia"><B>&nbsp;&nbsp;&nbsp;&nbsp;&#149&nbsp;</B></TD>')
+				write('  <td><font size=1 face="ms sans serif,arial,helvetica,verdana,lucida,utopia"><a href="' + alink + '" target="CONTENT"><b>' + adesc + '</b></a></font></td>')
+				writeln('</tr>')
+			}
+
+			writeln('<tr>')
+			write('  <td colspan=2><font size=2 face="ms sans serif,arial,helvetica,verdana,lucida,utopia">&nbsp;</font></td>')
+			writeln('</tr>')
+		}
+
+		writeln('</table>');
+		writeln('</body>')
+	}
+}
+// -->
+</script>
+
+<script LANGUAGE=JavaScript1.2>
+<!-- browser info object
+
+// resize and list functions
+if(!window.saveInnerWidth) {
+
+  window.onresize = resize;
+  window.saveInnerWidth = window.innerWidth;
+  window.saveInnerHeight = window.innerHeight;
+}
+
+function resize() {
+	
+    if (saveInnerWidth < window.innerWidth || 
+        saveInnerWidth > window.innerWidth || 
+        saveInnerHeight > window.innerHeight || 
+        saveInnerHeight < window.innerHeight ) 
+    {
+        window.history.go(0);
+    }
+}
+
+var _id = 0, _pid = 0, _lid = 0, _pLayer;
+var _mLists = new Array();
+document.lists = _mLists;
+
+// adapted DevEdge Online sample code :author Michael Bostock 
+
+function List(visible, width, height, bgColor) {
+  this.setIndent = setIndent;
+  this.addItem = addItem;
+  this.addList = addList;
+  this.build = build;
+  this.rebuild = rebuild;
+  this.setFont = _listSetFont;
+  this._writeList = _writeList;
+  this._showList = _showList;
+  this._updateList = _updateList;
+  this._updateParent = _updateParent;
+  this.onexpand = null; this.postexpand = null;
+  this.lists = new Array(); 
+  this.items = new Array(); 
+  this.types = new Array(); 
+  this.strs = new Array();  
+  this.x = 0;
+  this.y = 0;
+  this.visible = visible;
+  this.id = _id;
+  this.i = 18;
+  this.space = true;
+  this.pid = 0;
+  this.fontIntro = false;
+  this.fontOutro = false;
+  this.width = width; 
+  this.height = height;
+  this.parLayer = false;
+  this.built = false;
+  this.shown = false;
+  this.needsUpdate = false;
+  this.needsRewrite = false;
+  this.parent = null;
+  this.l = 0;
+  if(bgColor) this.bgColor = bgColor;
+  else this.bgColor = null;
+  _mLists[_id++] = this;
+}
+function _listSetFont(i,j) {
+  this.fontIntro = i;
+  this.fontOutro = j;
+}
+function setIndent(indent) { this.i = indent; if(this.i < 0) { this.i = 0; this.space = false;} this.space = false; }
+function setClip(layer, l, r, t, b) {
+  if(browserinfo.ns4) {
+    layer.clip.left = l; layer.clip.right = r;
+    layer.clip.top = t;  layer.clip.bottom = b;
+  } else {
+    layer.style.pixelWidth = r-l;
+    layer.style.pixelHeight = b-t;
+    layer.style.clip = "rect("+t+","+r+","+b+","+l+")";
+  }
+}
+function _writeList() {
+  var layer, str, clip, end;
+
+  for(var i = 0; i < this.types.length; i++) 
+  { 
+    layer = this.items[i];
+    if(browserinfo.ns4) 
+		layer.visibility = "hidden";
+    else 
+		layer.style.visibility = "hidden";
+    str = "";
+    if(browserinfo.ns4) 
+		layer.document.open();
+    str += "<form name=reptoc><TABLE bgcolor=FFFFFF WIDTH="+this.width+"  BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>";
+    if(this.types[i] == "list") 
+	{
+		str += "<TD WIDTH=21 VALIGN=MIDDLE><A HREF=\"javascript:expand("+this.lists[i].id+");\"><IMG BORDER=0 SRC=\"true.gif\" NAME=\"_img"+this.lists[i].id+"\"></A></TD>";
+		_pid++;
+		//bgColor	= '5f6cbf'
+		//bgColor = '#CCCCCC'
+		bgColor = '#ffffff'
+		end		= ""
+      } 
+	else 
+	{
+		bgColor	='ffffff'
+		end		= ""
+	}   
+   
+    if(this.l>0 && this.i>0) 
+		str += "<TD WIDTH="+this.l*this.i+" >&nbsp;</TD>";
+    str += "<TD BGCOLOR='" + bgColor + "' HEIGHT="+(this.height-1)+" WIDTH="+(this.width-15-this.l*this.i)+" VALIGN=MIDDLE ALIGN=LEFT>";
+  	self.status = "Table of Contents: " + ITEMS[i+1].adesc
+    if(this.fontIntro) 
+		str += this.fontIntro;
+    str += this.strs[i];
+    if(this.fontOutro) 
+		str += this.fontOutro;
+    str += "</TD><TD>"+end+"</TD></TR></TABLE></form>";
+	if(browserinfo.ns4) 
+	{
+	  layer.document.writeln(str);
+	  layer.document.close();
+	} 
+	else 
+	{
+		layer.innerHTML = str;
+    }
+	if(this.types[i] == "list" && this.lists[i].visible)
+	{
+      this.lists[i]._writeList();
+	}
+  }
+  this.built = true;
+  this.needsRewrite = false;
+  self.status = '';
+}
+function _showList() {
+  var layer;
+  for(var i = 0; i < this.types.length; i++) { 
+    layer = this.items[i];
+    setClip(layer, 0, this.width, 0, this.height-1);
+    if(browserinfo.ie4) {
+      if(layer.oBgColor) layer.style.backgroundColor = layer.oBgColor;
+      else layer.style.backgroundColor = this.bgColor;
+    } else {
+      if(layer.oBgColor) layer.document.bgColor = layer.oBgColor;
+      else layer.document.bgColor = this.bgColor;
+    }
+    if(this.types[i] == "list" && this.lists[i].visible)
+      this.lists[i]._showList();
+  }
+  this.shown = true;
+  this.needsUpdate = false;
+}
+function _updateList(pVis, x, y) {
+  var currTop = y, layer;
+  for(var i = 0; i < this.types.length; i++) { 
+    layer = this.items[i];
+    if(this.visible && pVis) {
+      if(browserinfo.ns4) {
+	layer.visibility = "visible";
+	layer.top = currTop;
+	layer.left = x;
+      } else {
+	layer.style.visibility = "visible";
+	layer.style.pixelTop = currTop;
+	layer.style.pixelLeft = x;
+      }
+      currTop += this.height;
+    } else {
+      if(browserinfo.ns4) layer.visibility = "hidden";
+      else layer.style.visibility = "hidden";
+    }
+    if(this.types[i] == "list") {
+      if(this.lists[i].visible) {
+        if(!this.lists[i].built || this.lists[i].needsRewrite) this.lists[i]._writeList();
+        if(!this.lists[i].shown || this.lists[i].needsUpdate) this.lists[i]._showList();
+        if(browserinfo.ns4) layer.document.images[0].src = "true.gif";
+	else eval('document.images._img'+this.lists[i].id+'.src = "true.gif"');
+      } else {
+	if(browserinfo.ns4) layer.document.images[0].src = "false.gif";
+	else eval('document.images._img'+this.lists[i].id+'.src = "false.gif"');
+      }
+      if(this.lists[i].built)
+        currTop = this.lists[i]._updateList(this.visible && pVis, x, currTop);
+    }
+  }
+  return currTop;
+}
+function _updateParent(pid, l) {
+  var layer;
+  if(!l) l = 0;
+  this.pid = pid;
+  this.l = l;
+  for(var i = 0; i < this.types.length; i++)
+    if(this.types[i] == "list")
+      this.lists[i]._updateParent(pid, l+1);
+}
+var iLstExp =1
+function expand(i) {
+
+	if (iLstExp != -1 && iLstExp != i)
+	{
+		  _mLists[iLstExp].visible = !_mLists[iLstExp].visible;
+		  if(_mLists[iLstExp].onexpand != null) _mLists[iLstExp].onexpand(_mLists[iLstExp].id);
+		  _mLists[_mLists[iLstExp].pid].rebuild();
+		  if(_mLists[iLstExp].postexpand != null) _mLists[iLstExp].postexpand(_mLists[iLstExp].id);
+
+	}
+	if (iLstExp != i)
+	{
+		iLstExp = i
+	}
+	else
+	{
+		iLstExp = -1
+	}
+	
+  _mLists[i].visible = !_mLists[i].visible;
+  if(_mLists[i].onexpand != null) _mLists[i].onexpand(_mLists[i].id);
+  _mLists[_mLists[i].pid].rebuild();
+  if(_mLists[i].postexpand != null) _mLists[i].postexpand(_mLists[i].id);
+}
+function build(x, y) {
+  this._updateParent(this.id);
+  this._writeList();
+  this._showList();
+  this._updateList(true, x, y);
+  this.x = x; this.y = y;
+}
+function rebuild() { this._updateList(true, this.x, this.y); }
+function addItem(str, bgColor, layer) {
+  var testLayer = false;
+  if(!document.all) document.all = document.layers;
+  if(!layer) {
+    if(browserinfo.ie4 || !this.parLayer) testLayer = eval('document.all.lItem'+_lid);
+    else {
+      _pLayer = this.parLayer;
+      testLayer = eval('_pLayer.document.layers.lItem'+_lid);
+    }
+    if(testLayer) layer = testLayer;
+    else {
+      if(browserinfo.ns4) {
+	if(this.parLayer) layer = new Layer(this.width, this.parLayer);
+	else layer = new Layer(this.width);
+      } else return;
+    }
+  }
+  if(bgColor) layer.oBgColor = bgColor;
+  this.items[this.items.length] = layer;
+  this.types[this.types.length] = "item";
+  this.strs[this.strs.length] = str;
+  _lid++;
+}
+function addList(list, str, bgColor, layer) {
+  var testLayer = false;
+  if(!document.all) document.all = document.layers;
+  if(!layer) {
+    if(browserinfo.ie4 || !this.parLayer) testLayer = eval('document.all.lItem'+_lid);
+    else {
+      _pLayer = this.parLayer;
+      testLayer = eval('_pLayer.document.layers.lItem'+_lid);
+    }
+    if(testLayer) layer = testLayer;
+    else {
+      if(browserinfo.ns4) {
+	if(this.parLayer) layer = new Layer(this.width, this.parLayer);
+	else layer = new Layer(this.width);
+      } else return;
+    }
+  }
+  if(bgColor) layer.oBgColor = bgColor;
+  this.lists[this.items.length] = list;
+  this.items[this.items.length] = layer;
+  this.types[this.types.length] = "list";
+  this.strs[this.strs.length] = str;
+  list.parent = this;
+  _lid++;
+}
+
+document.vlinkColor = document.linkColor
+document.alinkColor = document.linkColor
+document.linkColor	= document.linkColor
+
+var onit		= new Image()
+var ofit		= new Image()
+var cursel		= new Image()
+onit.src		= "tocarw.gif" 
+ofit.src		= "tocclr.gif"  
+cursel.src		= "tocsel.gif" 
+var curlink		= null
+var prvlink		= null
+var prvlnk		= null
+
+// List initialization
+var subvar = new Array()
+var image = 0
+var vol   = 0
+var sublist = null
+var  l = new List(true, width, height, bgColor);
+l.setFont("<FONT SIZE=1 FACE='ms sans serif,arial,helvetica,verdana,lucida,utopia' COLOR='#000000'>","</font>");
+
+
+function imgover(id,lnk){
+
+ 	if(lnk && !browserinfo.ns)
+	{
+		if(lnk != prvlnk)
+		{
+			lnk.style.color = 'green'
+			lnk.style.textDecoration = 'underline'
+		}
+	}
+ 	if (browserinfo.ns){	
+		var objstr = "document.layers[" + id + "].document.reptoc.wt" + id
+		img = eval(objstr) 
+	}
+	else{
+		img = eval("document.wt" + id) 
+	}
+    if (curlink && img == curlink)
+      img.src = cursel.src  
+    else
+      img.src = onit.src
+}
+
+function imgout(id,lnk){
+
+	if(lnk && !browserinfo.ns)
+	{
+		if(lnk != prvlnk)
+		{
+			lnk.style.color = '#4169e1'
+			lnk.style.textDecoration = 'none'
+		}
+	}
+	var img
+  	if (browserinfo.ns){
+		var objstr = "document.layers[" + id + "].document.reptoc.wt" + id
+		img = eval(objstr) 
+	}
+	else
+		img = eval("document.wt" + id) 
+
+	if (curlink && img == curlink)
+		img.src = cursel.src
+    else
+		img.src = ofit.src
+}
+
+
+function currentVol(iSection)
+{
+	if (prvlink)
+		prvlink.src = ofit.src
+
+	if (!_mLists[iSection].visible)
+	{
+		expand(iSection)
+	}
+	
+}
+function current(id, bVolume, lnk)
+{
+	if(prvlnk && !browserinfo.ns)
+	{
+		if (prvlnk != lnk)
+		{
+			prvlnk.style.color ='#4169e1'
+			lnk.style.textDecoration = 'none'
+		}	
+	}
+	if (lnk && !browserinfo.ns)
+	{
+		prvlnk = lnk
+		lnk.style.color ='blue'
+	}
+  	if (browserinfo.ns4){		
+		var objstr = "document.layers[" + id + "].document.reptoc.wt" + id
+		img = eval(objstr) 
+	}
+	else
+		img = eval("document.wt" + id) 
+
+	if (img && img != curlink){
+		curlink = img
+		if ( !bVolume )
+			curlink.src = cursel.src
+		if (prvlink)
+			prvlink.src = ofit.src
+		prvlink = curlink
+	}
+}
+
+function subnode(numElements)
+{
+
+	if (gbFirst)
+		bexpand = true
+	else
+		bexpand = bExpanded
+	this.list			= new List(bexpand, width, height, bgColor);
+	this.numElements	= numElements
+	gbFirst = false
+}
+
+function initsublist()
+{
+	sublist = new subnode(0)
+    sublist.list.setIndent(0);
+    sublist.list.setFont("<FONT SIZE=1 FACE='ms sans serif,arial,helvetica,verdana,lucida,utopia' COLOR='#000000'>","</font>");
+ 	cursublist = sublist
+    return sublist
+}
+
+function addsubitem(reportlink,reportdesc)
+{	
+	image++
+	cursublist.numElements++
+    cursublist.list.addItem("<nobr><img src=clear.gif width=9 height=1 border=0 >"
+		+ "<img name=wt" + image + " src='tocclr.gif' border=0>"
+		+ "<a href='" + reportlink + "' class='chapter' TARGET='CONTENT' onClick='current(" + image + ",1,this);return true;' "
+		+ "onMouseOver='imgover(" + image + ",this);return true;' onMouseOut='imgout(" + image + ",this);return true;'>"
+		+ "&nbsp;" + reportdesc + "</font></A></nobr>"
+		);
+
+}
+
+function addvolume(vollink,voldesc)
+{
+	vol++
+	image++
+	l.addList(cursublist.list, "<nobr><A HREF='" + vollink + "' class='volume' TARGET='CONTENT' onClick='currentVol("+vol+");return true;'onMouseOver='parent.ShowLnk(this,\"blue\")' onMouseOut='parent.HideLnk(this,\"#000000\")'>&nbsp;" + voldesc + "</a>");
+}
+
+function init()
+{
+
+   var item = 0
+
+   for (var volume = 1; volume <= (VOLUMES.length-1); volume++)
+   {
+		subvar[vol] = initsublist();
+
+		for (var chapters=1; chapters <= CHAPTERS[volume]; chapters++)
+		{
+			item++
+			subvar[vol] = addsubitem(ITEMS[item].alink, ITEMS[item].adesc)
+			if (maxChapters < chapters)
+			{
+				maxChapters = chapters
+			}
+		}
+
+		addvolume(VOLUMES[volume].alink, VOLUMES[volume].adesc)
+   }
+
+  maxChapters += volume
+  l.build(listX,listY);
+  bLoaded = true
+}
+
+var DOWN = 0;
+var UP   = 1;
+var gTimerId;
+if (document.layers)
+{
+	var scrollintver = 300
+}
+else
+{
+	var scrollintver = 100
+
+}
+function stopmove()
+{
+	clearInterval( gTimerId )
+}
+function move(iDirection)
+{
+	if (iDirection == DOWN)
+	{
+		down()
+	}
+	else
+	{
+		up()
+	}
+}
+function down()
+{
+	var d
+	listY	+=50
+	l.y		= listY
+
+	if (document.layers)
+	{
+		l._updateList(true,listX,listY);
+	}
+	else
+	{
+		for (var i=0; i <= MaxItems; i++)
+		{
+			d = eval("document.all.lItem" + i)
+			d.style.pixelTop	+=20
+		}
+	}
+}
+function up()
+{
+	var d
+	listY	-=50
+	l.y		= listY
+
+	if (document.layers)
+	{
+			l._updateList(true,listX,listY);
+	}
+	else
+	{
+		for (var i=0; i <= MaxItems; i++)
+		{
+			d = eval("document.all.lItem" + i)
+			d.style.pixelTop	-=20
+		}
+	}
+}
+
+function buildtoctitleframe(str)
+{
+	with(top.frames.toctitle.document)
+	{
+		open()
+		writeln('<html><body topmargin="1" leftmargin="1" bgcolor="FFFFFF">' + str + '</body></html>');
+		close()
+	}
+}
+function myvoid(){}
+// -->
+</script>
+<style type='text/css'>
+	A.chapter		{text-decoration:none;color:#4169e1;}
+	A.volume		{text-decoration:none;color:#000000;}
+</style>
+<script language=javascript1.2>
+<!--
+var SpacerHeight	= 1
+var toctitle	= "<font color='000000' face='ms sans serif,arial,helvetica' size=1><b>Table of Contents</b></font>"
+var contrl		= "&nbsp;<a href='javascript:top.frames.toc.down()'><img src='scrup.gif' border=0></a>&nbsp;</a><a href='javascript:top.frames.toc.up()'><img src='scrdown.gif' border=0></a>"
+if (browserinfo.ns)
+{
+	toctitle += contrl
+}
+//buildtoctitleframe(toctitle)
+
+var TOC_HTML
+
+TOC_HTML = '<style TYPE="text/css">\n'
+TOC_HTML += '#spacer		{ margin-top:0;position: absolute; height:' + SpacerHeight  + ';z-index: 0}\n'
+TOC_HTML += 'body			{ margin-top:3; margin-left:2; background-color:FFFFFF}\n'
+
+for (var i=0; i <= MaxItems; i++)
+{
+	TOC_HTML += '#lItem' + i + ' { position:absolute; }\n'
+}
+
+TOC_HTML += '</style>\n'
+TOC_HTML += '<body marginHeight=1 marginWidth=2 bgcolor="FFFFFF" onLoad="init();">\n'
+TOC_HTML += '<div  ID="spacer"><font size=1 face="ms sans serif,arial,helvetica,verdana,lucida,utopia"><b>Table of Contents</b></font></div>\n'
+
+for (var i=0; i <= MaxItems; i++)
+{
+	TOC_HTML += '<div ID="lItem' + i + '" name="lItem' + i + '"></div>\n'
+}
+
+document.writeln( TOC_HTML )
+
+// -->
+</script>
+</head>
+</HTML>
+
+

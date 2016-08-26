@@ -1,0 +1,26 @@
+	table.outer {  }
+	table.inner { }
+	table.help { }
+	td { color: black; border:solid; border-width: 0px; border-color: black; font-family:Verdana,Arial,sans-serif; font-size:10px; }
+	td.help {  font-family: Verdana,Arial,sans-serif; font-size:0.65em; }
+	.RefYesAvailable { background-color: LightGreen; border-color: #FEFFD2; border-width: 1px; }
+	.RefNotAvailable { background-color: Pink; border-color: #FEFFD2; border-width: 1px; }
+	.RefYesAvailableToday { background-color: LightGreen; border-color: black; border-width: 2px; }
+	.RefNotAvailableToday { background-color: Pink; border-color: black; border-width: 2px; }
+	.non-RefAvailable {  color: gray; background-color: silver; border-color: #FEFFD2; border-width: 1px; }	
+	.non-RefAvailableToday {  color: gray; background-color: silver; border-color: black; border-width: 1px; }	
+	.toprow { height: 20px; }
+	.lightblue { color: blue; }
+	.lightred { color: red; }
+	.gray { background-color: gray; border-color: gray; border-width: 1px; }
+	
+	.showheader1 { font-family: Verdana,Arial,sans-serif; font-weight: bold; font-size:13px; color:navy;}
+	.showheader2 { font-family: Verdana,Arial,sans-serif; font-weight: bold; font-size:10px; color:navy;}
+	.showeventitems { font-family: Verdana,Arial,sans-serif; font-size:10px; color:red; }
+	.showmatchdate { font-family: Verdana,Arial,sans-serif; font-size:10px; color:blue; }
+	.showeventtext { font-family: Verdana,Arial,sans-serif; font-size:10px; }
+	.input { font-family: Verdana,Arial,sans-serif; font-size:1.0em; }
+	.textarea { font-family: Verdana,Arial,sans-serif; font-size:10px; }
+	.textwarning { font-family: Verdana,Arial,sans-serif; font-size:9px; color:navy; }
+
+.pix13realblack { font-family: Verdana, Arial, Helvetica; font-size: 13px; font-weight:normal;  color:black;}

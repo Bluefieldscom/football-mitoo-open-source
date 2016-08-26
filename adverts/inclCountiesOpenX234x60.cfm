@@ -1,0 +1,3 @@
+<!--- called by Counties.cfm  --->
+
+<iframe id='ab8b298f' name='ab8b298f' src='http://d1.openx.org/afr.php?zoneid=124268&amp;cb=INSERT_RANDOM_NUMBER_HERE' frameborder='0' scrolling='no' width='234' height='60'><a href='http://d1.openx.org/ck.php?n=a113908d&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://d1.openx.org/avw.php?zoneid=124268&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a113908d' border='0' alt='' /></a></iframe>
